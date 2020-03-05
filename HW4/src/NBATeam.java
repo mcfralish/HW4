@@ -34,12 +34,12 @@ public class NBATeam {
 		opponent.loseGame();
 	}
 	
-	public String getTeamName() {
-		return sTeamName;
-	}
-	
 	public void loseGame() {
 		nLoss++;
+	}
+	
+	public String getTeamName() {
+		return sTeamName;
 	}
 	
 	public int getWins() {
