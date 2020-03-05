@@ -7,8 +7,6 @@ public class NBA {
 	public static void main(String[] args) {
 		
 
-
-		
 		// Construct Team Heat
 		System.out.println("Creating the NBA Team \"Heat\".");
 		NBATeam heat = new NBATeam("Heat");
