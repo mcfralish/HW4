@@ -5,7 +5,6 @@ public class NBA {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		System.out.println();
 
 		// Construct Team Heat
 		System.out.println("Creating the NBA Team \"Heat\".");
