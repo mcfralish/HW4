@@ -6,7 +6,7 @@ public class NBA {
 
 	public static void main(String[] args) {
 		
-
+		System.out.println();
 
 		
 		// Construct Team Heat
