@@ -1,3 +1,9 @@
+/* Michael C Fralish
+ * 03/06/2020
+ * PID: 001-17-6489
+ * Title: NBATeam
+ * This is a class file for the object NBATeam. It holds states and performs functions for the teams.
+ */
 import java.util.*;
 public class NBATeam {
 	

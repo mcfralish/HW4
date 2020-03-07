@@ -2,52 +2,21 @@
  * 03/06/2020
  * PID: 001-17-6489
  * Title: Draw
- * This program creates a drawing panel with the option for it to look like either the picture or the table.
- * This was a bit confusing because the picture does not match the table.
- * The user may choose which one will print out.
+ * This program creates a drawing panel with the picture in the assignment.
  */
 import java.awt.*;
-import java.util.*;
 public class Draw {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		// Options for the grader to choose the picture or the table
-		System.out.println("Would you like the drawing panel to look like the picture or the what the table requests?");
-		System.out.println("The two are different.");
-		System.out.println("1 Picture");
-		System.out.println("2 Table");
-		int answer = sc.nextInt();
-		
-		while (answer>2||answer<1) {
-			System.out.println("Please select Picture or Table.");
-			answer = sc.nextInt();
-		}
-		
-		// This makes it look like the picture
-		if (answer==1) {
-			DrawingPanel panel = new DrawingPanel(400,425);
-			Graphics g = panel.getGraphics();
-			panel.setBackground(Color.CYAN);
-			shape(g,0,0,100,10,1);
-			shape(g,18,175,24,4,6);
-			shape(g,180,25,40,5,5);
-			shape(g,180,250,36,6,4);
-		}
-		
-		// This makes it look like the table describes
-		if (answer==2) {
-			DrawingPanel panel = new DrawingPanel(400,400);
-			Graphics g = panel.getGraphics();
-			panel.setBackground(Color.CYAN);
-			shape(g,0,0,100,5,1);
-			shape(g,10,120,24,4,5);
-			shape(g,150,20,40,5,6);
-			shape(g,130,275,36,3,3);
-		}	
-		
-		sc.close();
+
+
+		DrawingPanel panel = new DrawingPanel(400,425);
+		Graphics g = panel.getGraphics();
+		panel.setBackground(Color.CYAN);
+		shape(g,0,0,100,10,1);
+		shape(g,18,175,24,4,6);
+		shape(g,180,25,40,5,5);
+		shape(g,180,250,36,6,4);
 		
 	}
 	
